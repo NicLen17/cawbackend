@@ -28,7 +28,7 @@ app.use(cors());
 
 // Habilitar express.json
 app.use(express.json({ extended: true, limit: '50mb' }));
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 // Configurar logs de morgan
 app.use(morgan('dev'));
