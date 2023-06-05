@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 
 const ProductosSchema = mongoose.Schema({
+    categoria: {
+        type: String,
+        trim: true,
+        required: true,
+    },
     patente: {
         type: String,
         trim: true,

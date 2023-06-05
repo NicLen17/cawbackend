@@ -19,6 +19,7 @@ exports.createProduct = [
     check('financiacion', 'La financiacion es obligatoria').not().isEmpty(),
     check('precio', 'El precio es obligatorio').not().isEmpty().isFloat({ min: 0 }),
     check('patente', 'La patente es obligatoria').not().isEmpty(),
+    check('categoria', 'La categoria es obligatoria').not().isEmpty(),
     check('img', 'La imagen es obligatoria').not().isEmpty(),
 ];
 
@@ -41,5 +42,6 @@ exports.updateProduct = [
     check('financiacion', 'La financiacion es obligatoria').not().isEmpty(),
     check('precio', 'El precio es obligatorio').not().isEmpty().isFloat({ min: 0 }),
     check('patente', 'La patente es obligatoria').not().isEmpty(),
+    check('categoria', 'La categoria es obligatoria').not().isEmpty(),
     check('img', 'La imagen es obligatoria').not().isEmpty(),
 ];
