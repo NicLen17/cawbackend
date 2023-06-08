@@ -100,11 +100,19 @@ const ProductosSchema = mongoose.Schema({
         trim: true,
         required: true,
     },
-    img: [
-        {
-            type: String,
-        },
-    ],
+    imgFirst: {
+        type: String,
+        required: true,
+    },
+    imgSecond: {
+        type: String,
+    },
+    imgThird: {
+        type: String,
+    },
+    imgFourth: {
+        type: String,
+    },
     registro: {
         type: Date,
         default: Date.now(),
