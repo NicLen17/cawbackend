@@ -100,6 +100,16 @@ const ProductosSchema = mongoose.Schema({
         trim: true,
         required: true,
     },
+    nombreCliente: {
+        type: String,
+        trim: true,
+        required: true,
+    },
+    telefonoCliente: {
+        type: Number,
+        trim: true,
+        required: true,
+    },
     imgFirst: {
         type: String,
         required: true,

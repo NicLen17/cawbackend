@@ -21,6 +21,8 @@ exports.createProduct = [
     check('patente', 'La patente es obligatoria').not().isEmpty(),
     check('categoria', 'La categoria es obligatoria').not().isEmpty(),
     check('imgFirst', 'La imagen es obligatoria').not().isEmpty(),
+    check('nombreCliente', 'El nombre del cliente es obligatorio').not().isEmpty().isLength({ max: 25 }),
+    check('telefonoCliente', 'El telefono del cliente es obligatorio').not().isEmpty().isLength({ max: 25 }),
 ];
 
 exports.updateProduct = [
@@ -44,4 +46,6 @@ exports.updateProduct = [
     check('patente', 'La patente es obligatoria').not().isEmpty(),
     check('categoria', 'La categoria es obligatoria').not().isEmpty(),
     check('imgFirst', 'La imagen es obligatoria').not().isEmpty(),
+    check('nombreCliente', 'El nombre del cliente es obligatorio').not().isEmpty().isLength({ max: 25 }),
+    check('telefonoCliente', 'El telefono del cliente es obligatorio').not().isEmpty().isLength({ max: 25 }),
 ];
